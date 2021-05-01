@@ -103,11 +103,16 @@
         float: right;
         font-family: 'Anonymous Pro', monospace;
     }
-    .author{
+    .bottom{
         position: relative;
-        top: 240px;
-        color: rgb(110, 110, 110);
-        font-family: 'Anonymous Pro', monospace;
+        top: 180px;
+        background-color: black !important;
+        width: 200px;
+        padding: 0;
+        margin: 0;
+    }
+    .signature{
+        width: 210px;
     }
 </style>
 <body>
@@ -159,9 +164,13 @@
         crossorigin="anonymous"></script>
     <script src="app.js"></script>
 </body>
-<p class="author">
-    Author: Parth Gupta
-</p>
+<nav class="navbar navbar-dark bg-dark bottom">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="/signature.png" alt="" class="signature">
+      </a>
+    </div>
+  </nav>
 <footer>
     <span>&#169;</span> 2021-22
 </footer>
