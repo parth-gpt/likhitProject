@@ -114,6 +114,13 @@
     .signature{
         width: 210px;
     }
+    #addTtl{
+        background-color: black;
+        /* border-color: white; */
+        border-color: rgb(110, 110, 110);
+        color: rgb(180, 180, 180);
+        
+    }
 </style>
 <body>
 
@@ -140,6 +147,10 @@
         <h1 class="welcome">Welcome To Likhit!</h1>
         <div class="card">
             <div class="card-body">
+                <h5 class="card-title add">Add note title</h5>
+                <div class="form-group">
+                    <textarea class="form-control" id="addTtl" rows="1"></textarea>
+                </div>
                 <h5 class="card-title add">Add a note</h5>
                 <div class="form-group">
                     <textarea class="form-control" id="addTxt" rows="3"></textarea>
