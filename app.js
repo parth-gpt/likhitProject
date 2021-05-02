@@ -11,7 +11,7 @@ addBtn.addEventListener("click", function () {
   } else {
     notesObj = JSON.parse(notes);
   }
-  
+
   let box = {
     title: addTtl.value,
     text: addTxt.value
@@ -21,7 +21,7 @@ addBtn.addEventListener("click", function () {
   localStorage.setItem("notes", JSON.stringify(notesObj));
   addTxt.value = "";
   addTtl.value = "";
-//   console.log(notesObj);
+  // console.log(notesObj);
   showNotes();
 });
 
